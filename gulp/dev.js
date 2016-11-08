@@ -67,12 +67,18 @@ gulp.task('vendor-css',['clean'], function () {
     .pipe(gulp.dest(config.dev.outputDir)); //save to output dir
 });
 
-//compiles sass
-gulp.task('compile-css',['vendor-css'], function () {
+
+//compile only sass
+function compileAppCss(){
   return gulp.src(config.global.entrySass)
     .pipe(sass().on('error', sass.logError))
     .pipe(concat(config.global.outputCss))
     .pipe(gulp.dest(config.dev.outputDir));
+};
+
+//compiles sass
+gulp.task('compile-css',['vendor-css'], function () {
+  return compileAppCss();
 });
 
 //build all dev files
