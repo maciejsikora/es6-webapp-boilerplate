@@ -1,5 +1,18 @@
 # es6-webapp-boilerplate
-Boilerplate for development of modern single page application with usage of babel, browserify and many good js staff.
+Boilerplate for development of modern single page application with usage of babel, browserify and many good js staff. Boilerplate uses:
+- es6
+- babel
+- browserify
+- browser-sync
+- sass
+
+Some features:
+- separation between development and production version of application
+- development with watching and automatic browser refresh
+- two simple commands, one for development, one for production
+- ready to use with any modern framework like Angular or React
+- simple gulp configuration with two separated files
+
 
 # Installation
 
