@@ -104,6 +104,13 @@ npm run production
 Script will compile and uglify js and css files, next will copy all files from dev directory to prod directory. After running ready
 to use production version is in **prod** directory.
 
+To check if our production build is working we can use:
+```
+npm run production-serve
+```
+
+Task will run server from prod directory. It is only development server to check production was build without errors and is working.
+
 # Installation on production server
 
 On production server project no need to have all dependencies, so install it by 
