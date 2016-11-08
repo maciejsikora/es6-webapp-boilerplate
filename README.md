@@ -12,6 +12,7 @@ Some features:
 - two simple commands, one for development, one for production
 - ready to use with any modern framework like Angular or React
 - simple gulp configuration with two separated files
+- prepared for use with single page apps and javascript routing
 
 
 # Installation
