@@ -125,6 +125,7 @@ var historyApiFallback = require('connect-history-api-fallback')
 // WEB SERVER FOR DEVELOPMENT
 gulp.task('dev-serve', ['watch'], function () {
   browserSync({
+    port:config.global.devServerPort,
     server: {
       baseDir: config.dev.indexDir, //start server in dev directory
       middleware: [
@@ -135,8 +136,10 @@ gulp.task('dev-serve', ['watch'], function () {
 });
 
 //WEB SERVER FOR PRODUCTION ( ONLY FOR CHECK IT WORKS - IN REAL PRODUCTION IT WILL RUN ON DIFFERENT WEB SERVER )
-gulp.task('prod-serve', ['build-prod'], function () {
+//RUN IT AFTER PRODUCTION BUILD - npm run production
+gulp.task('prod-serve', function () {
   browserSync({
+    port:config.global.devServerPort,
     server: {
       baseDir: config.prod.indexDir, //start server in prod directory
       middleware: [

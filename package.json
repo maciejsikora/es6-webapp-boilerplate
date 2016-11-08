@@ -5,7 +5,8 @@
   "main": "gulpfile.js",
   "scripts": {
     "production": "gulp build-prod --env=production",
-    "development": "gulp dev-serve"
+    "development": "gulp dev-serve",
+    "production-serve": "gulp prod-serve --env=development" 
   },
   "repository": {
     "type": "git",
