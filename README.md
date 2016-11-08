@@ -26,16 +26,16 @@ npm install
 # Directory structure
 
 ```
-src
+src - directory with application development files - here write code
 ---app.js - root application file for browserify - init application here and add imports
 ---app - here js es6 files
 ---sass - here .scss files
 dev
----dist
-------index.html - main file of project ( dev server starts from this file )
-------assets - files like images, svgs or other resources
-------other - example directory, create any directory You need
-prod - directory with compiled production version
+---dist - here js and css files are compiled from src //is ignored for git
+---index.html - main file of project ( dev server starts from this file )
+---assets - files like images, svgs or other resources
+---other - example directory, create any directory You need
+prod - directory with compiled production version //is ignored for git
 gulp - directory with gulp configuration
 --- dev.js - configuration for development
 --- prod.js - configuration for production
